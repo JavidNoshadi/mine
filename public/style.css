@@ -39,12 +39,12 @@
 
 .Header .right .home-btn {
   color: black;
-  border: 2px solid #2f2fe9;
+  border: 2px solid #0070f3;
   transition: .5s ease all;
 }
 
 .Header .right .home-btn:hover {
-  background: #4141eb;
+  background: #0070f3;
   color: #cccccc;
 }
 
@@ -54,13 +54,13 @@
 
 .Header .right .blog-btn {
   color: #cccccc;
-  background: #2f2fe9;
+  background: #0070f3;
   transition: .5s ease all;
 }
 
 .Header .right .blog-btn:hover {
-  background: #4141eb;
-  box-shadow: 0.5px 0.5px 1px 1px #4141eb;
+  background: #0070f3;
+  box-shadow: rgba(0, 118, 255, 0.39) 0px 2px 6px 0px;
 }
 
 .Header .right .blog-btn svg {
@@ -79,7 +79,7 @@
 }
 
 .Header .left h4 {
-  color: #4141eb;
+  color: #0070f3;
   font-size: 25px;
   direction: rtl;
   position: absolute;

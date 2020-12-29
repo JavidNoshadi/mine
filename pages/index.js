@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
+import Card1 from '../components/cards'
 
 const Header = dynamic(()=> import('../components/header'))
 export default function Home() {
@@ -8,14 +9,13 @@ export default function Home() {
     <div>
       <Head>
         <title> Javid Noshadi </title>
-        <script src="https://kit.fontawesome.com/bf0cb79f35.js" crossorigin="anonymous"></script>
       </Head>
         <div>
           <Header></Header>
               <div className='home-container'>
-                <h1>javiid</h1>
+                <Card1></Card1>
               </div>
-        </div>
+         </div>
         </div>
     )
 }

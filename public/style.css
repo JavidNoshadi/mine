@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.Header {
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.Header .right {
+  width: 40%;
+  direction: rtl;
+  background: none;
+  height: 40px;
+  display: flex;
+}
+
+.Header .right a {
+  padding: 7px 15px;
+  margin: 0px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.Header .right .home-btn {
+  color: black;
+  border: 2px solid #2f2fe9;
+  transition: .5s ease all;
+}
+
+.Header .right .home-btn:hover {
+  background: #4141eb;
+  color: #cccccc;
+}
+
+.Header .right .home-btn:hover svg {
+  fill: #cccccc;
+}
+
+.Header .right .blog-btn {
+  color: #cccccc;
+  background: #2f2fe9;
+  transition: .5s ease all;
+}
+
+.Header .right .blog-btn:hover {
+  background: #4141eb;
+  box-shadow: 0.5px 0.5px 1px 1px #4141eb;
+}
+
+.Header .right .blog-btn svg {
+  fill: #cccccc;
+}
+
+.Header .right svg {
+  height: 20px;
+  transition: .5s ease all;
+  margin-right: 8px;
+}
+
+.Header .left {
+  width: 60%;
+  height: 100%;
+}
+
+.Header .left h4 {
+  color: #4141eb;
+  font-size: 25px;
+  direction: rtl;
+  position: absolute;
+  left: 15px;
+  top: 3px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -10,6 +10,13 @@
   src: url("./asses/Yekan.ttf");
 }
 
+.footer {
+  background: blue;
+  height: 200px;
+  width: 100%;
+  z-index: 222222222;
+}
+
 .Header {
   height: 40px;
   position: absolute;
@@ -101,7 +108,7 @@
   left: 50%;
   transform: translatex(-50%);
   width: 80%;
-  height: 200vh;
+  height: fit-content;
   background: #faf6f6;
   border-radius: 10px;
   border: 2px #e7e3e3 solid;
@@ -131,7 +138,7 @@
   padding: 2.5rem;
   margin-top: 100px;
   background: none;
-  border: 1px #e7e3e3 solid;
+  border: 3px #e7e3e3 solid;
   box-shadow: rgba(250, 246, 246, 0.39) 0px 2px 6px 0px;
 }
 
@@ -151,6 +158,10 @@
   height: 150px;
 }
 
+.wrapper .card1:hover {
+  box-shadow: rgba(0, 118, 255, 0.39) 0px 2px 6px 0px;
+}
+
 .wrapper .card1 .right {
   max-width: 70%;
   display: flex;
@@ -167,6 +178,12 @@
 
 .wrapper .card1 .right .__bottom {
   margin-top: 250px;
+}
+
+.wrapper .card1 .right .__bottom .space {
+  width: 100%;
+  background: none;
+  height: 100px;
 }
 
 .wrapper .card1 .right .__bottom h1 span {
@@ -195,11 +212,55 @@
   height: fit-content;
   padding: 2.5rem;
   margin-top: 100px;
-  border: 1px #e7e3e3 solid;
+  border: 3px #e7e3e3 solid;
   box-shadow: rgba(250, 246, 246, 0.39) 0px 2px 6px 0px;
+}
+
+.card2:hover {
+  box-shadow: rgba(0, 118, 255, 0.39) 0px 2px 6px 0px;
 }
 
 .card2 .top img {
   height: 170px;
+}
+
+.card2 .bottom {
+  margin-top: 25px;
+}
+
+.card2 .bottom .space {
+  width: 100%;
+  background: none;
+  height: 100px;
+}
+
+.card2 .bottom h3,
+.card2 .bottom h1,
+.card2 .bottom p {
+  color: #111111;
+}
+
+.card2 .bottom h3 span {
+  color: #0070f3;
+}
+
+.card2 .bottom div {
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.card2 .bottom div h2 {
+  margin-top: 30px;
+  color: #0070f3;
+}
+
+.card2 .bottom div img {
+  height: 300px;
+}
+
+.card2 .bottom div img:hover {
+  box-shadow: rgba(250, 246, 246, 0.39) 0px 2px 6px 0px;
 }
 /*# sourceMappingURL=style.css.map */

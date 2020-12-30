@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+@font-face {
+  font-family: yekan;
+  src: url("./asses/Yekan.ttf");
+}
+
+.LoginPage {
+  width: 100%;
+  height: 100vh;
+  font-family: yekan, Arial, Helvetica, sans-serif;
+}
+
+.LoginPage img {
+  height: 200px;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+
+.LoginPage .errors {
+  display: none;
+}
+
+.LoginPage .errors.show {
+  background: #e23a3a;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  color: white;
+  font-family: yekan, Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transform: translatex(-50%);
+}
+
+.LoginPage .login-box {
+  border-radius: 5px;
+  height: 400px;
+  width: 400px;
+  background: #faf6f6;
+  border: 2px #e7e3e3 solid;
+  box-shadow: rgba(250, 246, 246, 0.39) 0px 2px 6px 0px;
+  position: relative;
+  top: 200px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.LoginPage .login-box:after {
+  content: '';
+  background: #0070f3;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20000;
+}
+
+.LoginPage .login-box .bottom {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.LoginPage .login-box .bottom a {
+  padding: 10px 17px;
+  border: red;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.LoginPage .login-box .bottom .home-btn {
+  background: #faf6f6;
+  box-shadow: rgba(0, 118, 255, 0.39) 0px 2px 6px 0px;
+  border: 1px solid #0070f3;
+  color: #0070f3;
+}
+
+.LoginPage .login-box .bottom .signup-btn {
+  background: #0070f3;
+  color: #faf6f6;
+}
+
+.LoginPage .login-box form {
+  direction: rtl;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.LoginPage .login-box form button {
+  font-family: yekan, Arial, Helvetica, sans-serif;
+  padding: 10px 45px;
+  transition: 0.4s ease all;
+  border-radius: 3px;
+  border: 1px solid #0070f3;
+}
+
+.LoginPage .login-box form button:hover {
+  background: #0070f3;
+  color: #faf6f6;
+  box-shadow: rgba(0, 118, 255, 0.39) 0px 2px 6px 0px;
+  outline: none;
+  border: 1px solid #faf6f6;
+}
+
+.LoginPage .login-box form input {
+  box-shadow: rgba(250, 246, 246, 0.39) 0px 2px 6px 0px;
+  border: 2px #e7e3e3 solid;
+  max-width: 80%;
+  width: 80%;
+  padding: 10px 15px;
+  font-family: yekan, Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=login.css.map */

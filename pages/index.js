@@ -7,16 +7,13 @@ const Header = dynamic(()=> import('../components/header'))
 export default function Home() {
   return(
     <div>
-      <Head>
-        <title> Javid Noshadi </title>
-      </Head>
-        <div>
-          <Header></Header>
-              <div className='home-container'>
-                <Card1></Card1>
-              </div>
-         </div>
-        </div>
+      <Head><title> Javid Noshadi </title></Head>
+      <Header></Header>
+      <main className='wrapper'>
+      <Card1></Card1>      
+      <Card1></Card1>      
+      </main>
+    </div>
     )
 }
 /* 

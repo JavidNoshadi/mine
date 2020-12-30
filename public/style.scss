@@ -4,18 +4,26 @@
     padding: 0;
     position: relative;
 }
-
+$font-fa: yekan ,Arial, Helvetica, sans-serif;
 $blue:rgb(0, 112, 243);
+$bg-white:rgb(250,246,246);
+$border-white:rgb(231, 227, 227);
 $blue-shadow:  rgba(0, 118, 255, 0.39) 0px 2px 6px 0px;
+@font-face{
+    font-family: yekan ;
+    src: url('./asses/Yekan.ttf');
+}
  .Header {
     height: 40px;
     position: absolute;
     top: 20px;
+    left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     justify-content: center;
+    z-index: 5555;
     .right {
         width: 40%;
         direction: rtl;
@@ -40,14 +48,14 @@ $blue-shadow:  rgba(0, 118, 255, 0.39) 0px 2px 6px 0px;
             transition: .5s ease all;
             &:hover {
                 background: $blue;
-                color: rgb(204, 204, 204);
+                color: $bg-white;
                 svg {
-                    fill: rgb(204, 204, 204);
+                    fill: $bg-white;
                 }
             }
         }
         .blog-btn {
-            color: rgb(204, 204, 204);
+            color: $bg-white;
             background: $blue;
             transition: .5s ease all;
             &:hover {
@@ -55,7 +63,7 @@ $blue-shadow:  rgba(0, 118, 255, 0.39) 0px 2px 6px 0px;
                 box-shadow: $blue-shadow;
             }
             svg {
-                fill: rgb(204, 204, 204);
+                fill: $bg-white;
             }
         }
         svg {
@@ -76,4 +84,35 @@ $blue-shadow:  rgba(0, 118, 255, 0.39) 0px 2px 6px 0px;
             top: 3px;
         }
     }
+}
+.wrapper{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 80%;
+    height: 100vh;
+    background: rgb(250, 246, 246);
+    border-radius: 10px;
+    border: 2px solid rgb(231, 227, 227);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    .card{
+        font-family: $font-fa;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            direction: rtl;
+            width: 80%;
+            height: fit-content;
+         
+    .left{
+        img{
+                    height: 200px;
+           }
+         }
+     }
 }

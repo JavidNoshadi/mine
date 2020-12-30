@@ -118,7 +118,8 @@
   top: -70px;
 }
 
-.wrapper .card {
+.wrapper .card1 {
+  overflow: hidden;
   font-family: yekan, Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: row-reverse;
@@ -127,19 +128,30 @@
   direction: rtl;
   width: 80%;
   height: fit-content;
+  padding: 2.5rem;
   margin-top: 100px;
   background: none;
+  border: 1px #e7e3e3 solid;
+  box-shadow: rgba(250, 246, 246, 0.39) 0px 2px 6px 0px;
 }
 
-.wrapper .card .left {
+.wrapper .card1 .blob {
+  position: absolute;
+  left: -110px;
+  height: 200px;
+  width: 200px;
+  top: 85%;
+}
+
+.wrapper .card1 .left {
   max-width: 30%;
 }
 
-.wrapper .card .left img {
+.wrapper .card1 .left img {
   height: 150px;
 }
 
-.wrapper .card .right {
+.wrapper .card1 .right {
   max-width: 70%;
   display: flex;
   flex-direction: column;
@@ -147,20 +159,47 @@
   justify-content: space-around;
 }
 
-.wrapper .card .right h1 {
+.wrapper .card1 .right h1 {
   padding: 10px 0;
   font-size: 42px;
+  color: #111;
 }
 
-.wrapper .card .right .__bottom {
+.wrapper .card1 .right .__bottom {
   margin-top: 250px;
 }
 
-.wrapper .card .right .__bottom span {
-  color: #0070f3;
+.wrapper .card1 .right .__bottom h1 span {
+  font-size: inherit;
 }
 
-.wrapper .card .right .__bottom p {
+.wrapper .card1 .right .__bottom span {
+  color: #0070f3;
+  font-size: 17px;
+}
+
+.wrapper .card1 .right .__bottom p {
   color: #111;
+  font-size: 17px;
+}
+
+.card2 {
+  overflow: hidden;
+  font-family: yekan, Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  direction: rtl;
+  width: 80%;
+  height: fit-content;
+  padding: 2.5rem;
+  margin-top: 100px;
+  border: 1px #e7e3e3 solid;
+  box-shadow: rgba(250, 246, 246, 0.39) 0px 2px 6px 0px;
+}
+
+.card2 .top img {
+  height: 170px;
 }
 /*# sourceMappingURL=style.css.map */

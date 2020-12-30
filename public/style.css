@@ -97,17 +97,25 @@
 .wrapper {
   position: absolute;
   top: 300px;
+  overflow: hidden;
   left: 50%;
   transform: translatex(-50%);
   width: 80%;
-  height: 100vh;
+  height: 200vh;
   background: #faf6f6;
   border-radius: 10px;
-  border: 2px solid #e7e3e3;
+  border: 2px #e7e3e3 solid;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   flex-direction: column;
+}
+
+.wrapper .blob {
+  position: absolute;
+  left: -70px;
+  height: 200px;
+  width: 200px;
+  top: -70px;
 }
 
 .wrapper .card {
@@ -119,9 +127,40 @@
   direction: rtl;
   width: 80%;
   height: fit-content;
+  margin-top: 100px;
+  background: none;
+}
+
+.wrapper .card .left {
+  max-width: 30%;
 }
 
 .wrapper .card .left img {
-  height: 200px;
+  height: 150px;
+}
+
+.wrapper .card .right {
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.wrapper .card .right h1 {
+  padding: 10px 0;
+  font-size: 42px;
+}
+
+.wrapper .card .right .__bottom {
+  margin-top: 250px;
+}
+
+.wrapper .card .right .__bottom span {
+  color: #0070f3;
+}
+
+.wrapper .card .right .__bottom p {
+  color: #111;
 }
 /*# sourceMappingURL=style.css.map */

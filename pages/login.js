@@ -10,7 +10,7 @@ import Header from '../components/header'
             <img  src='./asses/login.svg'/>
             <div className='errors'>'errors comes here'</div>
         <div className='login-box'>
-            <form method='post' action='/login'>
+            <form method='post' onSubmit={sendit} action='/login'>
                 <input placeholder='نام کاربری' type='text' name='username' className='username' />
                 <input placeholder='رمز عبور' type='password' name='password' className='password' />
                 <button type='submit'>ورود</button>
@@ -27,4 +27,3 @@ import Header from '../components/header'
         </div>)
 }
 
-export default Login

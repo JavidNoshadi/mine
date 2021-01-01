@@ -51,6 +51,11 @@ $slow: 0.4s ease all;
         transform: translatex(-50%);
     }
 
+    .footer{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
     .login-box {
         border-radius: 5px;
         height: 400px;

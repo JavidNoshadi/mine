@@ -39,6 +39,12 @@
   transform: translatex(-50%);
 }
 
+.LoginPage .footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 .LoginPage .login-box {
   border-radius: 5px;
   height: 400px;

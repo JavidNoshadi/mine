@@ -1,14 +1,11 @@
+const { default: Footer } = require("../components/footer")
+const { default: Header } = require("../components/header")
 import Link from 'next/link'
-//import connectToDatabase from '../util/mongodb'
-import Header from '../components/header'
-import Footer from '../components/footer'
-
- function Login() {
+const signup = ()=>{
     return(
-        <div className='LoginPage'>
-            <Header></Header>
-            <img  src='./asses/login.svg'/>
-            <div className='errors'>'errors comes here'</div>
+    <div className='signup'>
+        <Header></Header>
+        <div className='errors'>'errors comes here'</div>
         <div className='login-box'>
             <form method='post' action='/login'>
                 <input placeholder='نام کاربری' type='text' name='username' className='username' />
@@ -24,7 +21,9 @@ import Footer from '../components/footer'
                 </Link>
             </div>
         </div>
-        </div>)
+        <Footer></Footer>
+    </div>
+    )
 }
 
-export default Login
+export default  signup

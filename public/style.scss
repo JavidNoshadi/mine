@@ -134,8 +134,33 @@ $white-shadow: rgba(250, 246, 246, 0.39) 0px 2px 6px 0px;
 .Hero{
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 
-    div{
+    .rec{
+        position: absolute;
+        transform: rotate(180deg);
+    }
+    .rec1{
+        top: -450px;
+        right: -400px;
+        z-index: 2000;
+    }
+    .rec2{
+        top: -400px;
+        right: -400px;
+    }
+        .bottom{
+            height: 400px;
+            width: 100%;
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+
+            img{
+                height: 20px;
+            }
+        }
+    .hero-text{
         position: absolute;
         top: 30%;
         word-break:keep-all;
